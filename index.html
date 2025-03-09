@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memories Photography Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 5;
+            padding: 0;
             text-align: center;
             background-color: #f9f9f9;
         }
@@ -17,6 +18,25 @@
             color: white;
             padding: 20px;
             font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 36px;
         }
         .section {
             padding: 40px 20px;
@@ -40,11 +60,24 @@
 </head>
 <body>
     <header>
-        Memories Photography Studio
+        <a href="#home" style="color: white; text-decoration: none; font-size: 24px;">Home</a>
+        <nav class="menu">
+            <a href="#our-story">Our Story</a>
+            <a href="#our-services">Our Services</a>
+            <a href="#contact-us">Contact Us</a>
+        </nav>
     </header>
-    <section class="section">
+    <section id="home" class="section">
         <h2>Welcome to Memories Photography Studio</h2>
         <p>Capturing moments, creating memories. We provide high-quality self-shoot studio experiences at an affordable price.</p>
+    </section>
+    <section id="our-story" class="section">
+        <h2>Our Story</h2>
+        <p>Memories Photography Studio was founded with a passion for capturing life's special moments. Our mission is to make high-quality photography accessible to everyone.</p>
+    </section>
+    <section id="our-services" class="section">
+        <h2>Our Services</h2>
+        <p>We offer self-shoot studio sessions, professional portraits, family shoots, and themed sessions for all occasions.</p>
     </section>
     <section class="section gallery">
         <h2>Gallery</h2>
@@ -52,7 +85,7 @@
         <img src="https://via.placeholder.com/300" alt="Sample Photo 2">
         <img src="https://via.placeholder.com/300" alt="Sample Photo 3">
     </section>
-    <section class="section">
+    <section id="contact-us" class="section">
         <h2>Contact Us</h2>
         <p>Email: contact@memoriesstudio.com</p>
         <p>Phone: +63 912 345 6789</p>
